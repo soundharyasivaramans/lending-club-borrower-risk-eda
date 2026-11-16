@@ -41,11 +41,11 @@ Project 1 showed that loan grade and loan term are strongly linked to default. T
 
 **2. Loan-to-income is the strongest steady pattern.** Default rises from 14.19% (loan under 10% of income) to 18.35%, 23.36% and 31.02% (30% or more). It holds in **every grade**: the gap between the lowest and highest group is 4.7 points in grade A, 9.6 in C and 20.8 in E.
 
-![Default by loan-to-income](images/09_loan-to-income.png)
+![Default by loan-to-income](project2_images/09_loan-to-income.png)
 
 **3. Debt-to-income (DTI) rises steadily too.** From 16.21% (DTI 0-10) to 19.21%, 24.79% and 31.66% (30-40). The 40+ group (31.92%) has only 780 loans, so it is not reliable. Within grade, DTI still matters: in grade A default goes from 4.8% to 10.5%, in grade D from 28.2% to 39.8%.
 
-![Default by DTI](images/07_debt-to-income.png)
+![Default by DTI](project2_images/07_debt-to-income.png)
 
 **4. Higher income means lower default, but less so within grade.** 28.21% for incomes under 30k down to 15.61% for 150k+. Inside grades A, C, E and F the pattern holds (for example grade C: 29.1% down to 19.6%); inside B and D it is flat and noisy.
 
@@ -53,7 +53,7 @@ Project 1 showed that loan grade and loan term are strongly linked to default. T
 
 **6. Income verification looks backwards, but grade mix explains most of it.** Verified borrowers default *more* (27.47%) than Not Verified (16.16%). The reason is who gets verified: grades D-G make up 33.9% of Verified loans but only 13.2% of Not Verified loans, and 29.7% of Not Verified loans are grade A against 9.6% of Verified. Within each grade the gap shrinks from 11.3 points to between 1.7 (grade A) and 7.5 (grade E). Why verification is more common for riskier loans was not tested here.
 
-![Default by income verification](images/04_income_verification.png)
+![Default by income verification](project2_images/04_income_verification.png)
 
 **7. Missing employment information is a warning sign.** Borrowers with no employment length (6,620 loans) default at 29.59%, against 19.98% to 22.62% for every known group. Among known groups, years of employment is a weak driver (10+ years 19.98%, under 1 year 22.62%).
 
@@ -74,7 +74,7 @@ Project 1 showed that loan grade and loan term are strongly linked to default. T
 | Income verification | 11.3 pts | Mostly explained by grade mix |
 | Credit utilization | 8.4 pts | Weak inside a grade |
 
-![Default by grade and DTI](images/14_grade_by_debt_to_income.png)
+![Default by grade and DTI](project2_images/14_grade_by_debt_to_income.png)
 
 ### Ranking of drivers
 
@@ -95,7 +95,7 @@ Gap in default rate between the highest-risk and lowest-risk group of each chara
 
 This is a rough ranking. The gap depends on how groups were cut, and the top groups for loan purpose (989 loans) and DTI (780 loans) are small. The employment gap is driven by the "Unknown" group; without it the gap is 2.64 points.
 
-![Driver ranking](images/17_driver_ranking.png)
+![Driver ranking](project2_images/17_driver_ranking.png)
 
 ## Suggestions for a lender (to test, based on this data)
 
@@ -129,5 +129,5 @@ Data quality checks, feature engineering with `pd.cut`, `groupby` and `pivot_tab
 README.md
 project2_borrower_risk_eda.ipynb
 driver_summary.csv
-images/        (charts created by the notebook)
+project2_images/   (charts created by the notebook)
 ```
