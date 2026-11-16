@@ -1,0 +1,11 @@
+driver,lowest-risk group,lowest default %,highest-risk group,highest default %,spread (pts)
+loan purpose,car,15.25,small_business,33.06,17.81
+loan-to-income,<10%,14.19,30%+,31.02,16.83
+debt-to-income,0-10,16.21,40+,31.92,15.71
+annual income,150k+,15.61,<30k,28.21,12.6
+income verification,Not Verified,16.16,Verified,27.47,11.31
+employment length,10+ yrs,19.98,Unknown,29.59,9.61
+credit utilization,0-25%,16.78,75-100%,25.16,8.38
+home ownership,MORTGAGE,18.51,RENT,25.94,7.43
+public records,0,21.13,2+,25.43,4.3
+delinquencies,0,21.34,3+,25.41,4.07
